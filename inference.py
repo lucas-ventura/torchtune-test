@@ -227,7 +227,7 @@ def get_tune_model(checkpoint_dir, dtype="bf16", model_name="llama31", quantizat
         checkpointer_cfg=checkpointer_cfg,
         model_cfg=model_cfg,
         tokenizer_cfg=tokenizer_cfg,
-        enable_kv_cache=False,
+        enable_kv_cache=True,
     )
 
     return model
